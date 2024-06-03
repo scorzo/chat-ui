@@ -1,0 +1,64 @@
+/* General dark theme setup */
+.thread-list {
+    background-color: #333;  /* Dark background for the list */
+    color: #fff;             /* White text color for readability */
+    overflow-y: auto;
+    max-height: 600px;
+    padding: 10px;
+}
+
+.thread-item {
+    background: #444;         /* Slightly lighter background for each item */
+    padding: 20px;
+    margin-bottom: 10px;      /* Space between items */
+    border-radius: 5px;       /* Rounded corners */
+    text-align: left;         /* Left alignment of text */
+}
+
+/* Hiding bullets and adjusting padding for the list */
+.thread-list ul {
+    list-style-type: none;    /* Remove bullets */
+    padding-left: 0;          /* Remove default padding */
+    margin: 0;                /* Remove default margin */
+}
+
+/* Ensures links are white and left-justified */
+.thread-list ul li a {
+    color: #fff;              /* White color for links */
+    text-decoration: none;    /* No underline */
+    display: block;           /* Block display for full-width click area */
+    text-align: left;         /* Ensure text is left-aligned */
+}
+
+.thread-list ul li a:hover {
+    text-decoration: underline; /* Underline on hover for better UX */
+}
+
+/* Link styling in header for new thread button */
+.threads-header h2 a {
+    color: #fff;              /* White color for clickable header */
+    text-decoration: none;    /* No underline */
+    display: inline-block;    /* Inline block for sizing purposes */
+    cursor: pointer;          /* Pointer cursor to indicate clickable */
+}
+
+.threads-header h2 a:hover {
+    text-decoration: underline; /* Underline on hover for clarity */
+}
+
+/* Adjusting button styles to match new requirements */
+button {
+    background-color: #5c6bc0;  /* Indigo background */
+    color: white;               /* White text */
+    border: none;               /* No border */
+    padding: 10px 20px;         /* Padding for larger click area */
+    border-radius: 20px;        /* Rounded corners */
+    cursor: pointer;            /* Pointer cursor to indicate clickable */
+    margin-top: 10px;           /* Space above the button */
+    display: block;             /* Ensure button takes full width */
+    margin: 0 auto;             /* Horizontally center the button */
+}
+
+button:hover {
+    background-color: #3949ab;  /* Darker indigo on hover for visual feedback */
+}

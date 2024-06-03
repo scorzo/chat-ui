@@ -1,0 +1,117 @@
+/* CHAT AREA BEGIN */
+.chat-window {
+    background-color: #1e1e1e; /* Dark color for chat window */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #e0e0e0; /* Light text color for readability */
+    font-family: 'Roboto', sans-serif;
+}
+
+.message-list {
+    flex-grow: 1;
+    overflow: auto;
+    padding: 20px; /* Padding for better spacing */
+}
+
+.rce-mbox {
+    background-color: #333;
+    border-radius: 10px; /* Rounded corners for message boxes */
+    margin-bottom: 10px; /* Space between messages */
+}
+
+.rce-mbox-right-notch path {
+    fill: #333;
+}
+
+.rce-mbox-time {
+    color: #aaa;
+}
+
+.rce-mbox-left-notch path {
+    fill: #333;
+}
+
+.rce-mbox-text {
+    text-align: left;
+    padding: 10px 15px;
+    margin: 5px 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    border-radius: 10px; /* Unified border-radius */
+}
+
+.rce-mbox-text.left {
+    background-color: #424242; /* Dark grey for left messages */
+    color: #fff; /* White text for readability */
+    border-radius: 10px 10px 10px 0;
+}
+
+.rce-mbox-text.right {
+    background-color: #616161; /* Lighter grey for right messages */
+    color: #fff; /* White text for readability */
+    border-radius: 10px 10px 0 10px;
+}
+
+/* Enhance the overall container of the chat input */
+.rce-container-input {
+    display: flex; /* Flex layout for input and button */
+    align-items: center;
+    padding: 10px 20px; /* Padding for better spacing */
+    background-color: #1e1e1e; /* Match chat window background */
+    border-top: 1px solid #333; /* Top border to separate from messages */
+}
+
+/* Style for the input field within the chat */
+.rce-input-wrapper {
+    flex-grow: 1; /* Allow the input to fill the space */
+    position: relative;
+}
+
+.rce-input {
+    width: 100%; /* Full width */
+    padding: 10px 15px; /* Padding inside the input */
+    border: none; /* Remove border */
+    background-color: #333; /* Dark background for input */
+    color: #fff; /* White text color for readability */
+    border-radius: 4px; /* Rounded corners for input */
+    outline: none; /* Remove default outline */
+    font-size: 14px; /* Font size for input */
+}
+
+/* Floating label effect */
+.rce-input:focus + .rce-floating-label,
+.rce-input:not(:placeholder-shown) + .rce-floating-label {
+    top: -20px; /* Raise the label */
+    font-size: 12px; /* Smaller font size */
+    color: #ff5722; /* Primary color for label */
+}
+
+.rce-floating-label {
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    font-size: 14px;
+    color: #aaa;
+    pointer-events: none;
+    transition: 0.2s ease all;
+}
+
+/* Style adjustments for the button */
+.rce-input-buttons .rce-button {
+    background-color: #ff5722 !important; /* Match with node graph primary color */
+    color: white; /* White text color for readability */
+    border: none; /* No borders */
+    padding: 10px 20px; /* Padding around the text */
+    margin-left: 10px; /* Space between input and button */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Hover effect for the button to make it darker when hovered */
+.rce-input-buttons .rce-button:hover {
+    background-color: #e64a19; /* Darker shade of the primary color on hover */
+}
+/* CHAT AREA END */
